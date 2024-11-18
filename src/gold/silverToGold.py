@@ -1,5 +1,5 @@
 # Databricks notebook source
-# MAGIC %run /Workspace/Users/meka.mallikharjunareddy@diggibyte.com/a-bronzeToSilver
+# MAGIC %run /Workspace/Users/meka.mallikharjunareddy@diggibyte.com/bronzeToSilver
 
 # COMMAND ----------
 
@@ -29,3 +29,4 @@ final_df.display()
 
 # COMMAND ----------
 
+final_df.write.format("delta").mode("overwrite").save("/mnt/cp/gold/sales_view/StoreProductSalesAnalysis")
