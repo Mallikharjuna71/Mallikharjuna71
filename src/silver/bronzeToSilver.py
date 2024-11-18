@@ -3,7 +3,7 @@ try:
   dbutils.fs.mount(
     source = "wasbs://bronze@arjung2.blob.core.windows.net/Bronze/sales_view",
     mount_point = "/mnt/aa",
-    extra_configs = {'fs.azure.account.key.arjung2.blob.core.windows.net':'zzfw8HONQWlvArqQ7xXqXQw323M92Z1aNHSlKWV8g8evApj4FG6wSY3i7PW92MNBtW4/JZXq8KzA+ASt7JH44A=='})
+    extra_configs = {'fs.azure.account.key.arjung2.blob.core.windows.net':''})
 except Exception as e:
   print('mount already existed')  
 
@@ -13,7 +13,7 @@ try:
   dbutils.fs.mount(
     source = "wasbs://bronze@arjung2.blob.core.windows.net",
     mount_point = "/mnt/cp",
-    extra_configs = {'fs.azure.account.key.arjung2.blob.core.windows.net':'zzfw8HONQWlvArqQ7xXqXQw323M92Z1aNHSlKWV8g8evApj4FG6wSY3i7PW92MNBtW4/JZXq8KzA+ASt7JH44A=='})
+    extra_configs = {'fs.azure.account.key.arjung2.blob.core.windows.net':''})
 except Exception as e:
   print('mount already existed')  
 
